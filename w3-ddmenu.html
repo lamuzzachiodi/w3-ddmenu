@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Drilldown Menu for W3.CSS</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<!--Enable the next line to try one w3.css theme-->
+	<!--link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-indigo.css"-->
+	<script
+		 src="https://code.jquery.com/jquery-3.6.0.min.js"
+		  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+		  crossorigin="anonymous"
+	>
+   	</script>
+   	<script src="w3-ddmenu.js"></script>
+</head>
+<body class="w3-pale-blue">
+<div class="w3-container w3-row">
+	<div class="w3-card w3-panel w3-blue" >
+		<h1> W3-DDmenu</h1>
+	</div>
+	<div class="w3-bar w3-pale-blue">
+		<button class="w3-bar-item w3-button w3-black w3-hover-yellow" onclick="openTab('reference')">About W3-DDmenu ...</button>
+		<button class="w3-bar-item w3-button w3-white w3-hover-yellow" onclick="openTab('examples')">Examples</button>
+	</div>
+	<div id="reference" class="w3-container w3-black w3-padding">
+		<iframe title='Reference' src='readme.html' width='100%' height='500'></iframe>
+	</div>
+	<div id="examples" class="w3-container w3-white">
+		<div class="w3-container w3-col l5"><div class="w3-card-4 w3-round w3-padding-large w3-panel w3-gray"><b>Minimal setting</b></div>
+			<div id="drillbody" class="w3-container w3-margin" > 
+				<ul id="drillcrumb" class="w3-drillcrumb w3-round"></ul>
+				<div id="drillmenu" class="w3-drillmenu w3-round w3-card-4 w3-margin-bottom">
+					<ul>
+						<li><a href="http://www.dynamicdrive.com">Dynamic Drive</a></li>
+						<li><a href="http://www.codingforums.com/">Coding Forums</a></li>
+						<li><a href="#">Activities</a>
+							<ul>
+								<li><a href="#">Activities 1</a></li>
+								<li><a href="#">Activities 2</a></li>
+								<li><a href="#">Activities 3</a></li>
+								<li><a href="#">Water Sports</a>
+									<ul>
+										<li><a href="#">Water Sports 1</a></li>
+										<li><a href="#">Water Sports 2</a></li>
+										<li><a href="#">Water Rafting</a>
+											<ul>
+												<li><a href="#">Water Rafting 1</a></li>
+												<li><a href="#">Water Rafting 2</a></li>
+												<li><a href="#">Water Rafting 3</a></li>
+												<li><a href="#">Water Rafting 4</a></li>
+												<li><a href="#">Water Rafting 5</a></li>
+											</ul>
+										</li>
+										<li><a href="#">Water Sports 3</a></li>
+									</ul>
+								</li>
+								<li><a href="#">Activities 4</a></li>
+								<li><a href="#">Activities 5</a></li>
+								<li><a href="#">Activities 6</a></li>
+								<li><a href="#">Activities 7</a></li>
+								<li><a href="#">Activities 8</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Entertainment</a>
+							<ul>
+								<li><a href="#">Entertainment 1</a></li>
+								<li><a href="#">Entertainment 2</a></li>
+								<li><a href="#">Entertainment 3</a></li>
+								<li><a href="#">Entertainment 4</a></li>
+								<li><a href="#">Entertainment 5</a></li>
+								<li><a href="#">Entertainment 6</a></li>
+								<li><a href="#">Entertainment 7</a></li>
+								<li><a href="#">Entertainment 8</a></li>
+								<li><a href="#">Entertainment 9</a></li>
+								<li><a href="#">Entertainment 10</a></li>
+							</ul>
+						</li>
+						<li><a href="http://www.javascriptkit.com">JavaScript Kit</a></li>
+						<li><a href="#">Traveling</a>
+							<ul id='travel'>
+								<li><a href="#">Traveling 1</a></li>
+								<li><a href="#">Traveling 2</a></li>
+								<li><a href="#">Traveling 3</a></li>
+								<li><a href="#">North America</a>
+									<ul>
+										<li><a href="#">North America 1</a></li>
+										<li><a href="#">North America 2</a></li>
+										<li><a href="#">British Columbia</a>
+											<ul id="bc">
+												<li><a href="#">British Columbia 1</a></li>
+												<li><a href="#">British Columbia 2</a></li>
+												<li><a href="#">British Columbia 3</a></li>
+												<li><a href="#">British Columbia 4</a></li>
+												<li><a href="#">British Columbia 5</a></li>
+											</ul>
+										</li>
+										<li><a href="#">North America 3</a></li>
+										<li><a href="#">North America 4</a></li>
+										<li><a href="#">North America 5</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li><a href="http://www.dynamicdrive.com/style/">CSS Library</a></li>
+					</ul>
+				</div>
+				<button class="w3-button w3-white w3-margin"  onclick="menu.slidetoul('bc')">British Columbia</button>
+			</div>
+		</div>	
+		<div class="w3-container w3-col l5"><div class="w3-card-4 w3-round w3-padding-large w3-panel w3-red"><b>Full setting</b></div>
+			<div id="drillbody1" class="w3-container w3-margin" >
+				<ul id="drillcrumb1" class="w3-drillcrumb w3-round"></ul>
+				<div id="drillmenu1" class="w3-drillmenu w3-round w3-card-4 w3-margin-bottom">
+					<ul>
+						<li><a href="http://www.dynamicdrive.com">Dynamic Drive</a></li>
+						<li><a href="http://www.codingforums.com/">Coding Forums</a></li>
+						<li><a href="#">Activities</a>
+							<ul>
+								<li><a href="#">Activities 1</a></li>
+								<li><a href="#">Activities 2</a></li>
+								<li><a href="#">Activities 3</a></li>
+								<li><a href="#">Water Sports</a>
+									<ul>
+										<li><a href="#">Water Sports 1</a></li>
+										<li><a href="#">Water Sports 2</a></li>
+										<li><a href="#">Water Rafting</a>
+											<ul>
+												<li><a href="#">Water Rafting 1</a></li>
+												<li><a href="#">Water Rafting 2</a></li>
+												<li><a href="#">Water Rafting 3</a></li>
+												<li><a href="#">Water Rafting 4</a></li>
+												<li><a href="#">Water Rafting 5</a></li>
+											</ul>
+										</li>
+										<li><a href="#">Water Sports 3</a></li>
+									</ul>
+								</li>
+								<li><a href="#">Activities 4</a></li>
+								<li><a href="#">Activities 5</a></li>
+								<li><a href="#">Activities 6</a></li>
+								<li><a href="#">Activities 7</a></li>
+								<li><a href="#">Activities 8</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Entertainment</a>
+							<ul>
+									<li><a href="#">Entertainment 1</a></li>
+									<li><a href="#">Entertainment 2</a></li>
+									<li><a href="#">Entertainment 3</a></li>
+									<li><a href="#">Entertainment 4</a></li>
+									<li><a href="#">Entertainment 5</a></li>
+									<li><a href="#">Entertainment 6</a></li>
+									<li><a href="#">Entertainment 7</a></li>
+									<li><a href="#">Entertainment 8</a></li>
+									<li><a href="#">Entertainment 9</a></li>
+									<li><a href="#">Entertainment 10</a></li>
+								</ul>
+						</li>
+						<li><a href="http://www.javascriptkit.com">JavaScript Kit</a></li>
+						<li><a href="#">Traveling</a>
+							<ul id='travel'>
+								<li><a href="#">Traveling 1</a></li>
+								<li><a href="#">Traveling 2</a></li>
+								<li><a href="#">Traveling 3</a></li>
+								<li><a href="#">North America</a>
+									<ul>
+										<li><a href="#">North America 1</a></li>
+										<li><a href="#">North America 2</a></li>
+										<li><a href="#">British Columbia</a>
+											<ul id="bc">
+												<li><a href="#">British Columbia 1</a></li>
+												<li><a href="#">British Columbia 2</a></li>
+												<li><a href="#">British Columbia 3</a></li>
+												<li><a href="#">British Columbia 4</a></li>
+												<li><a href="#">British Columbia 5</a></li>
+											</ul>
+										</li>
+										<li><a href="#">North America 3</a></li>
+										<li><a href="#">North America 4</a></li>
+										<li><a href="#">North America 5</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li><a href="http://www.dynamicdrive.com/style/">CSS Library</a></li>
+					</ul>
+				</div>
+				<button class="w3-button w3-yellow w3-margin"  onclick="menu1.slidetoul('bc')">British Columbia</button>
+			</div>	
+		</div>	
+	</div>
+</div>
+<hr>
+</body>
+<script>
+$( window ).on( "load" , function (){
+	$('#examples').addClass('w3-hide')
+});
+
+function openTab (id) {
+if (id == 'examples') {
+ 	$('#reference').addClass('w3-hide')
+	$('#examples').removeClass(' w3-hide')
+}
+if (id == 'reference') {
+	$('#reference').removeClass('w3-hide')
+	$('#examples').addClass('w3-hide')
+}
+//$('#examples').toggleClass('w3-')
+
+}
+
+
+//Define examples
+	var menu = new w3_drilldownmenu({
+		menu:{id:'drillmenu'},
+		crumb:{id:'drillcrumb'},
+		body:{id:'drillbody'},
+	});
+	
+	var menu1 = new w3_drilldownmenu({
+		menu:{id:'drillmenu1',
+			title:'Menu',
+			titlebg:'red',
+			titletxt:'blue',
+			bg:'yellow',
+			border:'white',
+			txt:'green',
+			backtxt:'Atras un nivel',
+			height: 300,
+			width: 200
+		},
+		crumb:{id:'drillcrumb1',
+			title:'Comienzo',
+			bg:'orange',
+			txt:'white',
+			border:'red'
+		},
+		body:{id:'drillbody1',
+			bg:'pale-green',
+			txt:'white',
+			border:'pink'
+		},
+		speed: 100,
+		persist: {enable:true, selectedulid:'travel'}
+	});
+</script>
+</html>
